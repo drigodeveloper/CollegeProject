@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="page">
+        <header>
+            <h1>BEM VINDO!</h1>
+            <p>Preencha o formulário abaixo para se cadastrar</p>
+        </header>
+<form>
+
+<fieldset>
+
+    <legend>Informações pessoais</legend>
+
+    <div class="col">
+        <div class="input-wrapper">
+            <label for="event-name">Nome completo</label>
+            <input type="text" id="event-name">
+        </div>
+    </div>
+            
+     
+        <div class="input-wrapper">
+            <label for="event-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="event-email" required>
+        </div>
+            
+        <div class="input-wrapper">
+            <label for="event-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="event-password">
+        </div>
+        
+</fieldset>
+
+<fieldset>
+    <div class="col2">
+        <div class="date">
+            <div class="input-wrapper-date">
+                <div class="box">
+                    <label for="date-birth">Data de nascimento <span>(dd/mm/aa)</span></label>
+                </div>
+                <div class="box2">
+                    <input class="day" type="number">
+                    <input class="month" type="number">
+                    <input class="year" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="sex">
+            <div class="box">
+                <label for="">Sexo</label>
+            </div>
+            <div class="box2">
+                <input type="checkbox" name="" id="masculino">
+                <label for="masculino">Masculino</label>
+                
+                <input type="checkbox" name="" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+        </div>
+
+        <div class="civil-state">
+            <div class="box">
+                <label for="civil-state">Estado civil</label>
+            </div>
+            <div class="box2">
+                <select name="" id="civil-state">
+                    <option id="solteiro" value="Solteiro">Solteiro(a)</option>
+                    <option value="">Casado(a)</option>
+                    <option value="">Outros</option>
+                </select>
+            </div>
+        </div>
+        <div class="areas-interest">
+            <div class="box">
+                <label for="">Areas de interesse</label>
+            </div>
+            <div class="box2">
+                <input type="checkbox" name="" id="analise">
+                
+                <label for="analise">Analise</label>
+                
+                <input type="checkbox" name="" id="dados">
+                <label for="dados">Banco de dados</label>
+    
+                <input type="checkbox" name="" id="developer">
+                <label for="developer">Desenvolvimento</label>
+    
+                <input type="checkbox" name="" id="enginner">
+                <label for="enginner">Engenharia de software</label>
+    
+                <input type="checkbox" name="" id="computer">
+                <label for="computer">Rede de computadores</label>
+            </div>
+        </div>
+
+
+
+    </div>
+</fieldset>
+
+<div class="footer">
+    <button id="buttonSave">Salvar</button>
+</div>
+</form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
